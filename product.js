@@ -2,24 +2,39 @@
 const URL = 'https://fakestoreapi.com';
 
 
-// lode function when web side load 1st time
-document.addEventListener("DOMContentLoaded",()=>{
-    loadTrendingProducts()
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadAllProducts()
+    loadJeweleryProduc()
 })
 
 
+
 // product load
-async function loadTrendingProducts() {
+async function loadAllProducts() {
     try {
-        const responce = await fetch(`${URL}/products`)
-        const products = await responce.json()
-        const fristThreeProduct= products.slice(0,3)
-        displayProduct(fristThreeProduct,trendingGrid)
+        const response=await fetch(`${URL}/products`)
+        const products= await response.json()
+        displayProducts(products,allProductGrid)
     } catch (error) {
-        console.log(error);  
+        console.log(error);      
     }
     
 }
+
+async function loadJeweleryProduct() {
+    try {
+        const responce=await fetch(`${URL}/jewelery`)
+        const products=await responce.json()
+        displayProducts(products,JeweleryGrid)
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
+
+
 function createProductCard(product) {
     const card = document.createElement('div');
     card.className = 'bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fadeIn';
@@ -50,22 +65,22 @@ function createProductCard(product) {
     return card;
 }
 
+
 // Display Products
-function displayProduct(products,container){
-    if(products.length===0){
-        container.innerHTML='<p class="text-4xl text-center col-span-full">Not Found</p>'
+function displayProducts(products, container) {
+    container.innerHTML = '';
+    
+    if (products.length === 0) {
+        container.innerHTML = '<p class="col-span-full text-center text-gray-500">No products found.</p>';
         return;
     }
-    products.forEach(p=> {
-        const card= createProductCard(p)
-        container.appendChild(card)
-    });
     
-
+    products.forEach(product => {
+        const card = createProductCard(product);
+        container.appendChild(card);
+    });
 }
-
-
-
+f
 function generateStars(rating) {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
@@ -86,5 +101,6 @@ function generateStars(rating) {
     
     return stars;
 }
+
 
 

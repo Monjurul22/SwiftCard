@@ -24,9 +24,8 @@ Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
 <!-- stylesheet -->
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="">
-    <main class="max-w-6xl mx-auto  items-center justify-between">
-        <header class="max-w-6xl mx-auto  items-center justify-between" >
+<body class="max-w-6xl mx-auto  items-center justify-between">
+    <header class="max-w-6xl mx-auto  items-center justify-between" >
         <div class="navbar bg-base-100 ">
   <div class="navbar-start">
    
@@ -34,7 +33,7 @@ Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
   </div>
   <div class="navbar-center hidden lg:flex ">
     <ul class="menu menu-horizontal px-1 bg-none">
-      <li class=" hover:text-purple-400"><a >Home</a></li>
+      <li class=" hover:text-purple-400"><a href="./index.html" >Home</a></li>
       <li class=" hover:text-purple-400"><a href="./product.html">Poduct</a> </li>
       <li class=" hover:text-purple-400"><a>About</a></li>
       <li class=" hover:text-purple-400"><a>Contact</a></li>
@@ -58,111 +57,40 @@ Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
     </div>
 </div>
     </header>
-    <!-- hero section -->
-   <section class="relative h-[70vh] w-full m-0 ">
+    <section>
+        <div class="items-center justify-center py-10 flex gap-14 flex-wrap  ">
+            <button id="" class="btn font-normal hover:bg-blue-700 hover:text-white rounded ">All</button>
+            <button class="btn font-normal hover:bg-blue-700 hover:text-white rounded">Electronics</button>
+            <button id="JeweleryGrid" class="btn font-normal hover:bg-blue-700 hover:text-white rounded">Jewelery</button>
+            <button class="btn font-normal hover:bg-blue-700 hover:text-white rounded">Men's Clothing</button>
+            <button class="btn font-normal hover:bg-blue-700 hover:text-white rounded">Women's Clothing</button>
 
-  <div class="absolute inset-0 bg-[url('/Assets/banner-image.png')] bg-cover bg-center bg-no-repeat"></div>
-  <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/30"></div>
-  <div class="relative max-w-6xl mx-auto px-4 h-full flex items-center">
-    <div class="max-w-xl space-y-4 text-white">
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight ">
-        Best Collection For You
-        </h1>
-      <p class="text-base md:text-lg text-slate-200">
-        Discover the latest trends in fashion, electronics, and more. Shop with
-        confidence and style at SwiftCart.
-      </p>
-      <button class="btn btn-primary">
-        Shop Now
-      </button>
-    </div>
-  </div>
+        </div>
     </section>
 
-    <!-- Why Choose Us -->
-     <section class="bg-gray-100  ">
-        <div class="  text-center">
-            <h2 class=" text-3xl font-bold pt-8">Why Choose Us</h2>
-            <p class=" text-gray-600 pt-4 text-sm">We provide the best shopping experience with top-notch services.</p>
 
-        </div>
-        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-7 ">
-             <div class="  card bg-base-100 w-60 shadow-sm mt-13  sm:text-center sm:items-center sm:justify-between text-left  ">
-           <div class=" bg-sky-100 text-4xl rounded-lg border-solid outline-3 outline-offset-2
-             mx-auto items-start mt-4 m-auto  "><i class="fa-regular fa-truck"></i></div> 
-             
 
-            
-  <div class="card-body space-y-3">
-    <h2 class="card-title">Fast Delivery</h2>
-    <p>Get your orders delivered to your doorstep quickly and efficiently.</p>
-   
-  </div>
-    </div>
-     <div class="  card bg-base-100 w-60 shadow-sm mt-13 sm:text-center sm:items-center sm:justify-between ">
-           <div class=" bg-sky-100 text-4xl rounded-lg border-solid outline-3 outline-offset-2
-             mx-auto items-start mt-4 m-auto  "><i class="fa-regular fa-headphones"></i></div> 
-             
 
-            
-  <div class="card-body space-y-3">
-    <h2 class="card-title">Secure Payment</h2>
-    <p>Our support team is available around the clock to assist you.</p>
-   
-  </div>
-    </div>
-     <div class="  card bg-base-100 w-60 shadow-sm mt-13 sm:text-center sm:items-center sm:justify-between  ">
-           <div class=" bg-sky-100 text-4xl rounded-lg border-solid outline-3 outline-offset-2
-             mx-auto items-start mt-4 m-auto  "><i class="fa-solid fa-building-shield"></i></div> 
-             
 
-            
-  <div class="card-body space-y-3">
-    <h2 class="card-title">24/7 Support</h2>
-    <p>Experience safe and secure transactions with our encrypted payment systems.</p>
-   
-  </div>
-    </div>
-     <div class="  card bg-base-100 w-60 shadow-sm mt-13 sm:text-center sm:items-center sm:justify-between ">
-           <div class=" bg-sky-100 text-4xl rounded-lg border-solid outline-3 outline-offset-2
-             mx-auto items-start mt-4 m-auto  "><i class="fa-brands fa-opera"></i></div> 
-             
-      
-  <div class="card-body space-y-3">
-    <h2 class="card-title">Easy Returns</h2>
-    <p>Not satisfied? Return your products easily within 30 days.</p>
-  </div>
-    </div>
-        </div>
-     </section>
-<!--Trending Now  -->
-     <section class="py-20">
+
+
+
+     <section class="">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Trending Now</h2>
-            <div id="trendingGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" >
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Products</h2>
+            <div id="allProductGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" >
                 <!-- Loading spinner -->
-                <!-- <div class="col-span-full flex justify-center items-center min-h-[200px]">
+                <div class="col-span-full flex justify-center items-center min-h-[200px]">
                     <div class="w-12 h-12 border-4 border-gray-200 border-t-primary rounded-full animate-spin"></div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
 
-   
-
-   
 
 
 
-
-
-
-
-
-
-
-     <!-- footer -->
-   <footer class="footer sm:footer-horizontal grid-cols-1 gap-3  bg-slate-500 text-base-content py-10 px-10 text-gray-300 md:grid-cols-4 ">
+     <footer class="footer sm:footer-horizontal grid-cols-1 gap-3  bg-slate-500 text-base-content py-10 px-10 text-gray-300 md:grid-cols-4 ">
   <nav>
     <a class="font-bold text-xl text-purple-500">SwiftCart</a>
     <p class="text-xs">Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and excellent support.</p>
@@ -215,9 +143,6 @@ Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
 
 
 
-    </main>
-
-   
-    <script src="./index.js"></script>
+<script src="./product.js"></script>
 </body>
 </html>
